@@ -1,0 +1,19 @@
+#include<iostream>
+#include<cstdlib>
+#include<ctime>
+
+using namespace std;
+void generator() {
+	
+	srand(time(NULL));
+	int p = rand() % 6 + 1;
+	int v = rand() % 6 + 1;
+	cout << "Первый кубик: " << p << endl;
+	cout << "Второй кубик: " << v << endl;
+}
+int main() {
+
+	setlocale(LC_ALL, "Russian");
+	generator();
+	return 0;
+}
